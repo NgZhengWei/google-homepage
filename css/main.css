@@ -1,0 +1,173 @@
+@import url(reset.css);
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Navigation Bar*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.navbar a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar li {
+    margin-right: 1rem;
+}
+
+.navbar:last-child{
+    margin-right: 2rem;
+}
+
+#nav-menu {
+    font-size: 1.5rem;
+}
+
+#nav-profile-pic {
+    font-size: 2rem;
+}
+
+
+/* Logo Img*/
+.center .res-img {
+    max-width: 272px;
+    display: block;
+    margin: 150px auto auto auto;
+}
+
+
+/* Search Bar*/
+.search {
+    position: relative;
+    height: 2.5rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form {
+    height: 100%;
+    width: 100%;
+}
+
+#searchbar {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+}
+
+#search-icon {
+    margin-left: 1rem;
+}
+
+
+/* Buttons Section*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    margin-right: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* Languages Section*/
+.languages {
+    font-size: small;
+    text-align: center;
+}
+
+
+/* Footer*/
+.footer {
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #dadce0;
+    font-size: 14px;
+}
+
+.footer .country {
+    text-align: left;
+    padding-left: 27px;
+    border-bottom: 1px solid #dadce0;
+    width: 100%;
+    color: #70757a;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .links p {
+    margin-right: 27px;
+}
+
+.footer .links p a {
+    color: #70757a;
+    text-decoration: none;
+    margin-left: 27px;
+}
+
+.footer .links p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .footer .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Utility */
+.res-img {
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 484px;
+    width: 90%;
+    margin: 1rem auto;
+}
